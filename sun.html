@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+
+      <!-- load the d3.js library -->
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+
+      <nav class="nav-main">
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+      </nav>
+
+      <aside class="nav-sidebar">
+        <ul>
+          <li><span>Options</span></li>
+          <li><a href="index.html">Temperature</a></li>
+          <li><a href="wind_speed.html">Wind Speed</a></li>
+          <li><a href="humidity.html">Humidity</a></li>
+          <li><a href="pressure.html">Pressure</a></li>
+          <li><a href="sun.html">Sunrise/Sunset Time</a></li>
+        </ul>
+      </aside>
+
+      <div class="app-wrap2">
+        <header>
+          <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+        </header>
+        <main>
+          <section class="location">
+            <div class="city">Northampton, GB</div>
+            <div class="date">Thursday 10 January 2020</div>
+          </section>
+        <div class="current_sun">
+          <div class="title">Sunrise/Sunset </div>
+          <div class="sun"></div>
+        </div>
+        </main>
+
+      </div>
+      <script src="main.js"></script>
+  </body>
